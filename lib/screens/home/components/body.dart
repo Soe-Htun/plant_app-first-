@@ -21,7 +21,15 @@ import 'package:flutter/material.dart';
                     bottomLeft: Radius.circular(36),
                     bottomRight: Radius.circular(36)
                   )),
-               )
+               ),
+               Positioned(
+                 child: Container(
+                   margin: EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                   height: 44,
+                   decoration:  BoxDecoration(
+                     color: Colors.white
+                    ),
+                 ) )
              ],),
          )
        ],
