@@ -43,17 +43,29 @@ import 'package:flutter_svg/flutter_svg.dart';
                        )
                      ]
                     ),
-                    child: TextField(
-                      decoration: InputDecoration(
-                        hintText: "Search",
-                        hintStyle: TextStyle(
-                          color: kPrimaryColor.withOpacity(0.5),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: TextField(
+                            decoration: InputDecoration(
+                              hintText: "Search",
+                              hintStyle: TextStyle(
+                                color: kPrimaryColor.withOpacity(0.5),
+                              ),
+                              enabledBorder: InputBorder.none,
+                              focusedBorder: InputBorder.none,
+
+                              //suffix isn't working property with svg
+                              // thats why use row
+                              //suffixIcon: SvgPicture.asset("graphics/icons/search.svg")
+                              // suffixIcon: 
+                              //   SvgPicture.asset("graphics/icons/search.svg", color: kPrimaryColor, width: 10, height: 10,)
+                            ),
+                          ),
                         ),
-                        enabledBorder: InputBorder.none,
-                        focusedBorder: InputBorder.none,
-                        suffixIcon: 
-                          SvgPicture.asset("graphics/icons/search.svg", color: kPrimaryColor, width: 35, height: 20,)
-                      ),
+                        SvgPicture.asset("graphics/icons/search.svg", color: kPrimaryColor, width: 33, height: 28,)
+
+                      ],
                     ),
                  ) )
              ],),
