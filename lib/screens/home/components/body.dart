@@ -11,11 +11,11 @@ import 'package:flutter_svg/flutter_svg.dart';
        children: <Widget>[
          Container(
            // It will cover 20% of our total height
-           height:size.height * 0.15,
+           height:size.height * 0.2,
            child: Stack(
              children: <Widget>[
                Container(
-                 height:size.height * 0.15 - 27,
+                 height:size.height * 0.2 - 27,
                  decoration: BoxDecoration( 
                   color: kPrimaryColor,
                   borderRadius: BorderRadius.only(
