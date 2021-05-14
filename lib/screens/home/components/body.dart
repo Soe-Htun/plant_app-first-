@@ -11,11 +11,11 @@ import 'package:flutter_svg/flutter_svg.dart';
        children: <Widget>[
          Container(
            // It will cover 20% of our total height
-           height:size.height * 0.2,
+           height:size.height * 0.15,
            child: Stack(
              children: <Widget>[
                Container(
-                 height:size.height * 0.2 - 27,
+                 height:size.height * 0.15 - 27,
                  decoration: BoxDecoration( 
                   color: kPrimaryColor,
                   borderRadius: BorderRadius.only(
@@ -52,7 +52,7 @@ import 'package:flutter_svg/flutter_svg.dart';
                         enabledBorder: InputBorder.none,
                         focusedBorder: InputBorder.none,
                         suffixIcon: 
-                          SvgPicture.asset("graphics/icons/search.svg", color: kPrimaryColor, width: 25,)
+                          SvgPicture.asset("graphics/icons/search.svg", color: kPrimaryColor, width: 35, height: 20,)
                       ),
                     ),
                  ) )
